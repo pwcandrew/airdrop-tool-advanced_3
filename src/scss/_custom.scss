@@ -1,0 +1,48 @@
+// Here you can add other styles
+.header-fixed {
+  .app-body {
+    margin-top: 70px;
+  }
+}
+
+.sidebar {
+  background: rgb(0,150,197);
+
+  .nav-link {
+    padding: 1rem 1.75rem;
+
+    .nav-icon {
+      color: #ffffff;
+    }
+
+    &.active {
+      background: #0d6890;
+
+      .nav-icon {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .sidebar-minimizer {
+    flex: 0 0 64px;
+  }
+}
+
+.app-header {
+  height: 70px;
+  background-color: rgb(0,150,197);
+  border-bottom: 1px solid #35779f;
+
+  .navbar-brand {
+    width: 200px;
+  }
+}
+
+.main {
+  background-color: #e4e5e6;
+}
+
+.c-pointer {
+  cursor: pointer;
+}

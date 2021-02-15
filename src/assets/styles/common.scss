@@ -1,0 +1,113 @@
+// Common classes
+@import "variables";
+
+// Font setup
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+}
+
+// body basic setup
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+@media (min-width: $break-xs) {
+  .container {
+    max-width: 600px;
+  }
+}
+
+@media (min-width: $break-sm) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: $break-md) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: $break-lg) {
+  .container {
+    max-width: 1366px;
+  }
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+
+  .header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    .logo {
+      height: 28px;
+      margin-left: 60px;
+    }
+
+    .hamburger-icon {
+      width: 18px;
+    }
+
+    .hamburger-btn {
+      margin-left: 20px;
+    }
+  }
+
+  .footer {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-top: #CCCCCC 1px outset;
+    color: #999999;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    .copyright {
+      font-size: 12px;
+      margin-left: 60px;
+    }
+
+    .follow-us {
+      display: flex;
+      margin-left: auto;
+      align-items: center;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .label {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .primary-color {
+    color: #05ACFF;
+
+    &.checked {
+      color: #05ACFF;
+    }
+  }
+}
+
